@@ -4,8 +4,8 @@ import pandas as pd
 from urllib.parse import quote_plus
 from flask import Flask, request, jsonify, send_from_directory
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CSV_PATH = os.path.join(BASE_DIR, "catalog.csv")
+BASE_DIR = "./"
+CSV_PATH = "./catalog.csv"
 
 app = Flask(__name__, static_folder=None)
 
